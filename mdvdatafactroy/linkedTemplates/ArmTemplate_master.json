@@ -11,6 +11,18 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureSqlDatabase1'"
 		},
+		"LinkCopyFile_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'LinkCopyFile'"
+		},
+		"LinkCopyFile_properties_typeProperties_host": {
+			"type": "string",
+			"defaultValue": "\\\\LAPTOP-PR62F6VD\\Users\\madha\\OneDrive\\Desktop\\Learning\\ADF"
+		},
+		"LinkCopyFile_properties_typeProperties_userId": {
+			"type": "string",
+			"defaultValue": "madhav.parashar@gmail.com"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -40,6 +52,15 @@
 					},
 					"AzureSqlDatabase1_connectionString": {
 						"value": "[parameters('AzureSqlDatabase1_connectionString')]"
+					},
+					"LinkCopyFile_password": {
+						"value": "[parameters('LinkCopyFile_password')]"
+					},
+					"LinkCopyFile_properties_typeProperties_host": {
+						"value": "[parameters('LinkCopyFile_properties_typeProperties_host')]"
+					},
+					"LinkCopyFile_properties_typeProperties_userId": {
+						"value": "[parameters('LinkCopyFile_properties_typeProperties_userId')]"
 					}
 				}
 			},

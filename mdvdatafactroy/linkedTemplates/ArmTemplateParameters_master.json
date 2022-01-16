@@ -8,6 +8,15 @@
 		"AzureSqlDatabase1_connectionString": {
 			"value": ""
 		},
+		"LinkCopyFile_password": {
+			"value": ""
+		},
+		"LinkCopyFile_properties_typeProperties_host": {
+			"value": "\\\\LAPTOP-PR62F6VD\\Users\\madha\\OneDrive\\Desktop\\Learning\\ADF"
+		},
+		"LinkCopyFile_properties_typeProperties_userId": {
+			"value": "madhav.parashar@gmail.com"
+		},
 		"containerUri": {
 			"value": ""
 		},
