@@ -15,28 +15,29 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
+					"source": {
+						"type": "AzureSqlSource",
+						"queryTimeout": "02:00:00",
+						"partitionOption": "None"
+					},
+					"sink": {
+						"type": "AzureSqlSink",
+						"disableMetricsCollection": false
+					},
 					"enableStaging": false
-				}
-			},
-			{
-				"name": "Lookup1",
-				"type": "Lookup",
-				"dependsOn": [
+				},
+				"inputs": [
 					{
-						"activity": "Copy data1",
-						"dependencyConditions": [
-							"Succeeded"
-						]
+						"referenceName": "AzureSqlTable1",
+						"type": "DatasetReference"
 					}
 				],
-				"policy": {
-					"timeout": "7.00:00:00",
-					"retry": 0,
-					"retryIntervalInSeconds": 30,
-					"secureOutput": false,
-					"secureInput": false
-				},
-				"userProperties": []
+				"outputs": [
+					{
+						"referenceName": "AzureSqlTable2",
+						"type": "DatasetReference"
+					}
+				]
 			}
 		],
 		"annotations": []
